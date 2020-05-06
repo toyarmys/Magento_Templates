@@ -1,0 +1,23 @@
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+  <body>
+    <move element="product.info.stock.sku" destination="product.info.main" before="-"/>
+    <move element="product.info.review" destination="product.info.main" before="-"/>
+    <referenceContainer name="footer">
+                <block class="Magento\Framework\View\Element\Template" name="social.links" template="Magento_Theme::social-links.phtml" after="-"/>
+      </referenceContainer>
+      <referenceContainer name="product.info.main">
+        <block class="Aht\Demo\Block\Frontend\Say" name="aht.demo.say" template="Magento_Theme::say.phtml">
+          <arguments>
+            <argument name="current_page" xsi:type="string">detail</argument>
+            <argument name="all_page" xsi:type="string">all</argument>
+          </arguments>
+          <block class="Aht\Demo\Block\Frontend\Hi" name="aht.demo.hi" template="Magento_Theme::hi.phtml">
+
+          </block>
+        </block>
+        <block class="Aht\Demo\Block\Frontend\Hello" name="aht.demo.hello" template="Magento_Theme::say.phtml">
+
+          </block>
+      </referenceContainer>
+  </body>
+</page>

@@ -1,0 +1,16 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_src" xsi:type="string">images/logo.svg</argument>
+                <argument name="logo_alt" xsi:type="string">Logo name</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="authorization-link-login" remove="true" />
+        <referenceBlock name="my-account-link" remove="true" />
+        <referenceBlock name="register-link" remove="true" />
+        <referenceBlock name="header" remove="true" />
+        <referenceBlock name="authorization-link" remove="true" />
+        <!-- <referenceBlock name="product.info.review" remove="true" /> -->
+    </body>
+</page>

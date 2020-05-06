@@ -1,0 +1,33 @@
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<referenceContainer name="footer">
+			<block class="Magento\Framework\View\Element\Template" name="social.links" template="Magento_Theme::social-links.phtml" after="-" />
+		</referenceContainer>
+		<referenceContainer name="product.info.main">
+			<block class="Aht\Demo\Block\Frontend\Say" name="aht.demo.say" template="Magento_Theme::say.phtml">
+				<arguments>
+					<argument name="current_page" xsi:type="string">
+						detail
+					</argument>
+					<argument name="all_page" xsi:type="string">
+						all
+					</argument>
+					<argument name="class" xsi:type="string">
+						abc1zc3
+					</argument>
+				</arguments>
+				<block class="Aht\Demo\Block\Frontend\Hi" name="aht.demo.hi" template="Magento_Theme::hi.phtml">
+				</block>
+			</block>
+			<block class="Aht\Demo\Block\Frontend\Hello" name="aht.demo.hello" template="Magento_Theme::say.phtml">
+			</block>
+		</referenceContainer>
+		<referenceBlock name="product.info.review">
+			<arguments>
+				<argument name="class" xsi:type="string">
+						abc123
+				</argument>
+			</arguments>
+		</referenceBlock>
+	</body>
+</page>
